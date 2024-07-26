@@ -1,0 +1,25 @@
+:root {
+  --main-color: #0ea5e9; /* Tailwind Sky 500 */
+  --accent-color: #eab308; /* Tailwind Yellow 500 */
+}
+
+.container {
+  display: grid;
+  grid-template: auto 1fr / 300px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  grid-area: 1 / 1 / -1 / 2;
+  background-color: var(--main-color);
+}
+
+.header {
+  grid-area: 1 / 2 / 2 / -1;
+  background-color: #fff;
+}
+
+.main {
+  grid-area: 2 / 2 / -1 / -1;
+  background-color: #e5e7eb; /* Tailwind Gray 200 */
+}
