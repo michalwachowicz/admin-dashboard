@@ -3,6 +3,11 @@
   --accent-color: #eab308; /* Tailwind Yellow 500 */
 }
 
+body {
+  font-family: "Roboto", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .container {
   display: grid;
   grid-template: auto 1fr / 300px 1fr;
