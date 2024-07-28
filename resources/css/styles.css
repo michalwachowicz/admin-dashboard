@@ -3,7 +3,9 @@
   --main-color-active: #0369a1; /* Tailwind Sky 700 */
   --main-bg-color: #e5e7eb; /* Tailwind Gray 200 */
   --accent-color: #eab308; /* Tailwind Yellow 500 */
+  --text-light: #334155; /* Tailwind Slate 700 */
   --box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.5);
+  --icon-width: 1.75rem;
 }
 
 body {
@@ -24,6 +26,10 @@ h2 {
   font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 0.25rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -117,7 +123,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .header-nav-icon {
   display: block;
-  width: 1.75rem;
+  width: var(--icon-width);
 }
 
 .header-nav-profile-section {
@@ -164,7 +170,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .header-main-btn {
-  cursor: pointer;
   width: 6rem;
   padding: 0.5rem;
   border: none;
@@ -204,6 +209,56 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .projects {
   grid-area: 1 / 1 / -1 / 2;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.75rem;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
+  background-color: var(--accent-color);
+}
+
+.card-title {
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.card-description {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+.card-btn-container {
+  display: flex;
+  align-self: flex-end;
+  margin-top: auto;
+  gap: 1.5rem;
+}
+
+.card-btn {
+  border: none;
+  background: none;
+  width: var(--icon-width);
 }
 
 .announcements {
