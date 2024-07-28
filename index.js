@@ -59,6 +59,7 @@ const createText = (type, className, text) => {
 const generateCard = ({ title, description }) => {
   const card = document.createElement("div");
   card.classList.add("card");
+  card.classList.add("project-card");
 
   const h3 = createText("h3", "card-title", title);
   const p = createText("p", "card-description", description);

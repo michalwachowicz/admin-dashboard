@@ -228,16 +228,19 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: var(--box-shadow);
+  padding: 2rem;
 }
 
-.card::before {
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -280,6 +283,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .announcements {
   grid-area: 1 / 2 / 2 / -1;
+}
+
+.announcements-card {
+  background-color: #fff;
 }
 
 .trending {
