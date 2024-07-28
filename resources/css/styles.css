@@ -4,7 +4,7 @@
   --main-bg-color: #e5e7eb; /* Tailwind Gray 200 */
   --accent-color: #eab308; /* Tailwind Yellow 500 */
   --box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.5);
-  --content-pad: 1rem;
+  --content-pad: 1rem 2rem;
 }
 
 body {
@@ -29,7 +29,7 @@ ul {
 
 .sidebar {
   grid-area: 1 / 1 / -1 / 2;
-  padding: var(--content-pad);
+  padding: 1rem;
   color: #fff;
   background-color: var(--main-color);
 }
