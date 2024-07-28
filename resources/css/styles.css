@@ -231,6 +231,17 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .header-btn-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .header-main-btn {
+    width: 100%;
+  }
+}
+
 .profile-img > img {
   border-radius: 50%;
 }
