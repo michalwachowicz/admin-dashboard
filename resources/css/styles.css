@@ -43,18 +43,14 @@ button {
 
 .sidebar {
   grid-area: 1 / 1 / -1 / 2;
+  min-height: 100vh;
   padding: 1rem;
   color: #fff;
   background-color: var(--main-color);
 }
 
-@supports (position: sticky) {
-  .sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    height: 100vh;
-    top: 0;
-  }
+.sidebar-content {
+  position: fixed;
 }
 
 .sidebar-title {
