@@ -252,13 +252,20 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-self: flex-end;
   margin-top: auto;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .card-btn {
   border: none;
+  border-radius: 50%;
   background: none;
-  width: var(--icon-width);
+  padding: 0.5rem;
+  width: calc(var(--icon-width) + 0.5rem);
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .announcements {
