@@ -1,6 +1,13 @@
 const cardContainer = document.querySelector(".project-cards");
 const trendingCard = document.querySelector(".trending-card");
 
+const sidebar = document.querySelector(".sidebar");
+const header = document.querySelector(".header");
+const main = document.querySelector(".main");
+
+const sidebarHide = document.querySelector("#sidebar-hide");
+const sidebarShow = document.querySelector("#sidebar-show");
+
 const cards = [
   {
     title: "Super Cool Project",
@@ -128,5 +135,34 @@ const generateTrendingBtn = ({ profile, project, image }) => {
   trendingCard.appendChild(button);
 };
 
+const addClass = (element, className) => {
+  if (!element.classList.contains(className)) {
+    element.classList.add(className);
+  }
+};
+
+const removeClass = (element, className) => {
+  if (element.classList.contains(className)) {
+    element.classList.remove(className);
+  }
+};
+
+const showSidebar = () => {
+  addClass(sidebarShow, "hidden");
+  removeClass(sidebar, "hidden");
+  removeClass(header, "fullwidth");
+  removeClass(main, "fullwidth");
+};
+
+const hideSidebar = () => {
+  removeClass(sidebarShow, "hidden");
+  addClass(sidebar, "hidden");
+  addClass(header, "fullwidth");
+  addClass(main, "fullwidth");
+};
+
 cards.forEach(generateCard);
 trendings.forEach(generateTrendingBtn);
+
+sidebarShow.addEventListener("click", showSidebar);
+sidebarHide.addEventListener("click", hideSidebar);
