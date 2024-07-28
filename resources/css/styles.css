@@ -152,12 +152,6 @@ input[type="search"]::-webkit-search-results-decoration {
   width: max-content;
 }
 
-@media screen and (max-width: 1000px) {
-  .header-nav-profile-name {
-    display: none;
-  }
-}
-
 .header-main,
 .header-main-profile,
 .header-btn-container {
@@ -167,6 +161,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .header-main {
   margin-top: 2rem;
+  gap: 2rem;
   justify-content: space-between;
 }
 
@@ -204,6 +199,21 @@ input[type="search"]::-webkit-search-results-decoration {
 .header-main-btn:active {
   background-color: var(--main-color-active);
   box-shadow: var(--box-shadow);
+}
+
+@media screen and (max-width: 1000px) {
+  .header-nav-profile-name {
+    display: none;
+  }
+
+  .header-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-btn-container {
+    align-self: flex-end;
+  }
 }
 
 .profile-img > img {
