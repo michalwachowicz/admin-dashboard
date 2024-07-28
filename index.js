@@ -36,8 +36,8 @@ const cards = [
 
 const trendings = [
   {
-    profile: "michalwachowicz",
-    project: "Super Cool Project",
+    profile: "tegan",
+    project: "World Peace Builder",
     image: "./resources/img/profile-1.jpg",
   },
   {
@@ -46,13 +46,13 @@ const trendings = [
     image: "./resources/img/profile-1.jpg",
   },
   {
-    profile: "michalwachowicz",
-    project: "Super Cool Project",
+    profile: "kendall",
+    project: "Life Changing App",
     image: "./resources/img/profile-1.jpg",
   },
   {
-    profile: "michalwachowicz",
-    project: "Super Cool Project",
+    profile: "alex",
+    project: "No Traffic Maker",
     image: "./resources/img/profile-1.jpg",
   },
 ];
