@@ -149,6 +149,20 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: bold;
 }
 
+@media screen and (max-width: 500px) {
+  .header-nav > .sidebar-btn {
+    margin-right: 1rem;
+  }
+
+  .header-nav-profile {
+    margin-left: 1rem;
+  }
+
+  #notifications-icon {
+    margin-left: 1rem;
+  }
+}
+
 .header-nav-profile-name {
   width: max-content;
 }
