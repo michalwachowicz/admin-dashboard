@@ -373,10 +373,12 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: left;
   font-size: 0.8rem;
   font-weight: 500;
+  color: #000;
 }
 
 .trending-btn-project {
   font-size: 0.9rem;
+  color: var(--text-light);
 }
 
 .hidden {
