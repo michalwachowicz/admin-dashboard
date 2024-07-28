@@ -285,8 +285,18 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-area: 1 / 2 / 2 / -1;
 }
 
-.announcements-card {
-  background-color: #fff;
+.announcement-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.announcement-text {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+.announcements-card > hr {
+  margin: 1rem 0;
 }
 
 .trending {
