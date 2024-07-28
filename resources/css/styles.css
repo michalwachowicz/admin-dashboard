@@ -1,5 +1,6 @@
 :root {
   --main-color: #0284c7; /* Tailwind Sky 600 */
+  --main-color-active: #0369a1; /* Tailwind Sky 700 */
   --main-bg-color: #e5e7eb; /* Tailwind Gray 200 */
   --accent-color: #eab308; /* Tailwind Yellow 500 */
   --box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.5);
@@ -125,12 +126,65 @@ input[type="search"]::-webkit-search-results-decoration {
   width: max-content;
 }
 
+.header-main,
+.header-main-profile,
+.header-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-main {
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.header-main-profile {
+  gap: 1rem;
+}
+
+.header-main-text-container {
+  font-weight: bold;
+}
+
+.header-main-text-small {
+  font-size: 0.8rem;
+}
+
+.header-main-text-big {
+  font-size: 1.2rem;
+}
+
+.header-btn-container {
+  gap: 1.5rem;
+}
+
+.header-main-btn {
+  cursor: pointer;
+  width: 6rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5rem;
+  color: #fff;
+  background-color: var(--main-color);
+  font-weight: bold;
+}
+
+.header-main-btn:hover,
+.header-main-btn:active {
+  background-color: var(--main-color-active);
+  box-shadow: var(--box-shadow);
+}
+
 .profile-img > img {
   border-radius: 50%;
 }
 
 .profile-img-small {
   width: 3rem;
+}
+
+.profile-img-big {
+  width: 4.5rem;
 }
 
 .main {
