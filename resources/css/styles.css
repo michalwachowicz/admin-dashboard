@@ -103,8 +103,8 @@ button {
   align-items: center;
 }
 
-.header-nav {
-  gap: 4rem;
+.header-nav > .sidebar-btn {
+  margin-right: 2rem;
 }
 
 .header-nav-search {
@@ -138,6 +138,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .header-nav-profile-section {
+  margin-left: 4rem;
   gap: 1.5rem;
 }
 
@@ -327,4 +328,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .trending-btn-project {
   font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.fullwidth {
+  grid-column: 1 / -1;
 }
