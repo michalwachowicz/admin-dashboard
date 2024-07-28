@@ -73,6 +73,8 @@ const createButton = (src, title) => {
   const img = document.createElement("img");
   img.src = src;
   img.alt = `${title} icon`;
+  img.width = 100;
+  img.height = 100;
 
   btn.appendChild(img);
   return btn;
@@ -120,6 +122,8 @@ const generateTrendingBtn = ({ profile, project, image }) => {
   const img = document.createElement("img");
   img.src = image;
   img.alt = `${profile}'s profile picture`;
+  img.width = 100;
+  img.height = 100;
 
   imgContainer.appendChild(img);
 
