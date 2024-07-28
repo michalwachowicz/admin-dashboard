@@ -1,6 +1,6 @@
 :root {
-  --main-color: #0284c7; /* Tailwind Sky 600 */
-  --main-color-active: #0369a1; /* Tailwind Sky 700 */
+  --main-color: #1e40af; /* Tailwind Blue 800 */
+  --main-color-active: #1e3a8a; /* Tailwind Blue 900 */
   --main-bg-color: #e5e7eb; /* Tailwind Gray 200 */
   --accent-color: #eab308; /* Tailwind Yellow 500 */
   --text-light: #334155; /* Tailwind Slate 700 */
