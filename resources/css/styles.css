@@ -70,12 +70,15 @@ button {
   margin-top: 1rem;
 }
 
-.sidebar-icon-item {
+.sidebar-btn {
   display: flex;
   gap: 0.5rem;
   align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
+  border: none;
+  background: none;
+  color: #fff;
 }
 
 .sidebar-icon-big {
