@@ -134,6 +134,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .header-nav-icon {
   display: block;
+  min-width: var(--icon-width);
   width: var(--icon-width);
 }
 
