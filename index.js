@@ -1,4 +1,5 @@
 const cardContainer = document.querySelector(".project-cards");
+const trendingCard = document.querySelector(".trending-card");
 
 const cards = [
   {
@@ -30,6 +31,29 @@ const cards = [
     title: "Money Maker",
     description:
       "Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.",
+  },
+];
+
+const trendings = [
+  {
+    profile: "michalwachowicz",
+    project: "Super Cool Project",
+    image: "./resources/img/profile-1.jpg",
+  },
+  {
+    profile: "michalwachowicz",
+    project: "Super Cool Project",
+    image: "./resources/img/profile-1.jpg",
+  },
+  {
+    profile: "michalwachowicz",
+    project: "Super Cool Project",
+    image: "./resources/img/profile-1.jpg",
+  },
+  {
+    profile: "michalwachowicz",
+    project: "Super Cool Project",
+    image: "./resources/img/profile-1.jpg",
   },
 ];
 
@@ -78,4 +102,31 @@ const generateCard = ({ title, description }) => {
   cardContainer.appendChild(card);
 };
 
+const generateTrendingBtn = ({ profile, project, image }) => {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.classList.add("trending-btn");
+
+  const imgContainer = document.createElement("div");
+  imgContainer.classList.add("profile-img", "profile-img-small");
+
+  const img = document.createElement("img");
+  img.src = image;
+  img.alt = `${profile}'s profile picture`;
+
+  imgContainer.appendChild(img);
+
+  const textContainer = document.createElement("div");
+  textContainer.classList.add("trending-btn-text");
+
+  const profileText = createText("div", "trending-btn-profile", `@${profile}`);
+  const projectText = createText("div", "trending-btn-project", project);
+
+  textContainer.append(profileText, projectText);
+  button.append(imgContainer, textContainer);
+
+  trendingCard.appendChild(button);
+};
+
 cards.forEach(generateCard);
+trendings.forEach(generateTrendingBtn);
