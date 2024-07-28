@@ -4,7 +4,6 @@
   --main-bg-color: #e5e7eb; /* Tailwind Gray 200 */
   --accent-color: #eab308; /* Tailwind Yellow 500 */
   --box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.5);
-  --content-pad: 1rem 2rem;
 }
 
 body {
@@ -69,7 +68,7 @@ ul {
 
 .header {
   grid-area: 1 / 2 / 2 / -1;
-  padding: var(--content-pad);
+  padding: 1rem 2rem;
   background-color: #fff;
 }
 
@@ -191,7 +190,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: grid;
   grid-template: 1fr 1fr / 3fr 1fr;
   grid-area: 2 / 2 / -1 / -1;
-  padding: var(--content-pad);
+  padding: 2rem;
   background-color: var(--main-bg-color);
 }
 
