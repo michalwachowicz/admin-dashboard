@@ -1,6 +1,9 @@
 :root {
   --main-color: #0284c7; /* Tailwind Sky 600 */
+  --main-bg-color: #e5e7eb; /* Tailwind Gray 200 */
   --accent-color: #eab308; /* Tailwind Yellow 500 */
+  --box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.5);
+  --content-pad: 1rem;
 }
 
 body {
@@ -25,7 +28,7 @@ ul {
 
 .sidebar {
   grid-area: 1 / 1 / -1 / 2;
-  padding: 1rem;
+  padding: var(--content-pad);
   color: #fff;
   background-color: var(--main-color);
 }
@@ -65,10 +68,73 @@ ul {
 
 .header {
   grid-area: 1 / 2 / 2 / -1;
+  padding: var(--content-pad);
   background-color: #fff;
+}
+
+.header-nav,
+.header-nav-search,
+.header-nav-profile,
+.header-nav-profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  gap: 4rem;
+}
+
+.header-nav-search {
+  gap: 0.75rem;
+  width: 100%;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.header-nav-search input[type="search"] {
+  border: none;
+  border-radius: 5rem;
+  padding: 0.25rem 1rem;
+  font-size: 1.1rem;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+.header-nav-search input[type="search"]:focus {
+  box-shadow: var(--box-shadow);
+}
+
+.header-nav-icon {
+  display: block;
+  width: 1.75rem;
+}
+
+.header-nav-profile-section {
+  gap: 1.5rem;
+}
+
+.header-nav-profile {
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: max-content;
+}
+
+.profile-img > img {
+  border-radius: 50%;
+}
+
+.profile-img-small {
+  width: 3rem;
 }
 
 .main {
   grid-area: 2 / 2 / -1 / -1;
-  background-color: #e5e7eb; /* Tailwind Gray 200 */
+  padding: var(--content-pad);
+  background-color: var(--main-bg-color);
 }
