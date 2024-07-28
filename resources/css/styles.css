@@ -45,6 +45,14 @@ button {
   background-color: var(--main-color);
 }
 
+@supports (position: sticky) {
+  .sidebar {
+    position: sticky;
+    height: 100vh;
+    top: 0;
+  }
+}
+
 .sidebar-title {
   font-size: 1.75rem;
 }
