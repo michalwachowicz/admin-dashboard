@@ -186,10 +186,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .profile-img-small {
   width: 3rem;
+  min-width: 3rem;
 }
 
 .profile-img-big {
   width: 4.5rem;
+  min-width: 4.5rem;
 }
 
 .main {
