@@ -152,6 +152,12 @@ input[type="search"]::-webkit-search-results-decoration {
   width: max-content;
 }
 
+@media screen and (max-width: 1000px) {
+  .header-nav-profile-name {
+    display: none;
+  }
+}
+
 .header-main,
 .header-main-profile,
 .header-btn-container {
